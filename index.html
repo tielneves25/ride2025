@@ -4,23 +4,19 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Taça RIDE-DF de Fut7</title>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   <style>
-    * {
-      box-sizing: border-box;
-    }
     body {
-      font-family: 'Montserrat', sans-serif;
+      font-family: sans-serif;
       margin: 0;
       padding: 0;
       background: linear-gradient(145deg, #132635, #0c0f14);
       color: #fff;
     }
-    header {
+    .taca-ride-container {
+      padding: 40px 20px;
       background: linear-gradient(to right, #aa352b, #e7bc49);
-      color: white;
-      padding: 60px 20px 40px;
       text-align: center;
+      color: white;
     }
     .logo-container {
       max-width: 300px;
@@ -29,92 +25,85 @@
     .logo-container img {
       width: 100%;
     }
+    .taca-ride-container h1 {
+      font-size: 32px;
+      margin-bottom: 15px;
+      font-weight: 900;
+    }
+    .taca-ride-container p {
+      font-size: 18px;
+      max-width: 600px;
+      margin: 0 auto 30px;
+      font-weight: 500;
+    }
     .video-container {
       width: 220px;
       height: 360px;
-      margin: 20px auto;
+      margin: 0 auto 30px;
     }
     .video-container video {
       width: 100%;
       height: 100%;
       object-fit: cover;
-      border-radius: 10px;
-    }
-    header h1 {
-      font-size: 3em;
-      margin-bottom: 20px;
-      animation: pulse 2s infinite;
-      font-weight: 900;
-    }
-    @keyframes pulse {
-      0% { transform: scale(1); }
-      50% { transform: scale(1.05); }
-      100% { transform: scale(1); }
-    }
-    header p {
-      font-size: 1.4em;
-      font-weight: 600;
-      max-width: 700px;
-      margin: 0 auto 40px;
+      border-radius: 12px;
     }
     .cta-buttons a {
-      text-decoration: none;
-      background: #fff;
-      color: #aa352b;
-      padding: 18px 36px;
-      margin: 10px;
-      border-radius: 50px;
-      font-weight: bold;
-      font-size: 1.2em;
       display: inline-block;
+      margin: 8px;
+      padding: 14px 28px;
+      background: white;
+      color: #aa352b;
+      border-radius: 30px;
+      font-weight: bold;
+      text-decoration: none;
       transition: all 0.3s ease;
     }
     .cta-buttons a:hover {
       background: #132635;
       color: #e7bc49;
     }
-    section {
-      padding: 60px 20px;
-      max-width: 1100px;
+    .section {
+      padding: 40px 20px;
+      max-width: 800px;
       margin: auto;
+      text-align: left;
     }
-    section h2 {
+    .section h2 {
       color: #e7bc49;
-      font-size: 2.3em;
-      margin-bottom: 25px;
+      font-size: 24px;
+      margin-bottom: 20px;
       text-align: center;
     }
-    ul {
+    .section ul {
       list-style: none;
       padding-left: 0;
     }
-    ul li {
-      margin-bottom: 14px;
-      font-size: 1.2em;
-      line-height: 1.8;
+    .section li {
+      font-size: 16px;
+      margin-bottom: 12px;
       position: relative;
-      padding-left: 30px;
+      padding-left: 28px;
     }
-    ul li::before {
+    .section li::before {
       content: '🔥';
       position: absolute;
       left: 0;
+      top: 0;
     }
-    footer {
+    .footer {
       background: #0c0f14;
-      color: white;
       text-align: center;
-      padding: 60px 20px;
+      padding: 40px 20px;
+      color: #fff;
     }
     .btn-final {
-      margin-top: 30px;
       display: inline-block;
-      padding: 20px 36px;
+      margin-top: 20px;
+      padding: 16px 32px;
       background: #e7bc49;
       color: #132635;
-      border-radius: 50px;
+      border-radius: 30px;
       font-weight: bold;
-      font-size: 1.3em;
       text-decoration: none;
       transition: all 0.3s ease;
     }
@@ -125,24 +114,81 @@
   </style>
 </head>
 <body>
-  <header>
+  <div class="taca-ride-container">
     <div class="logo-container">
-      <img src="https://static.wixstatic.com/media/01f3ab_2f00c853acae4b07b02c42fd04617976~mv2.png" alt="Logo Taça RIDE-DF">
+      <img src="https://static.wixstatic.com/media/01f3ab_2f00c853acae4b07b02c42fd04617976~mv2.png" alt="Logo Taça RIDE-DF" />
     </div>
+
     <h1>💥 O BRASILEIRO COMEÇA AQUI! 💥</h1>
     <p>Prepare seu time, mostre seu talento e dispute R$30.000 em prêmios. A RIDE-DF é o palco dos gigantes do Fut7!</p>
+
     <div class="video-container">
       <video controls>
-        <source src="https://video.wixstatic.com/video/01f3ab_f216f12d3d554f92b8c0f6df34bbdc59/480p/mp4/file.mp4" type="video/mp4">
+        <source src="https://video.wixstatic.com/video/01f3ab_f216f12d3d554f92b8c0f6df34bbdc59/480p/mp4/file.mp4" type="video/mp4" />
         Seu navegador não suporta vídeo HTML5.
       </video>
     </div>
+
     <div class="cta-buttons">
       <a href="#filie">🎫 Filie meu time – R$100</a>
       <a href="#inscreva">🚀 Quero jogar – Inscrição R$790</a>
     </div>
-  </header>
+  </div>
 
-  <!-- Restante da página continua igual -->
+  <div class="section">
+    <h2>🌟 Motivos pra não ficar de fora</h2>
+    <ul>
+      <li>Vaga direta no Brasileiro CF7BRASIL em São Paulo</li>
+      <li>Premiação total de R$30.000 – a maior da região!</li>
+      <li>16 microrregiões do DF & Entorno representadas</li>
+      <li>Formato regionalizado: baixo custo, alta visibilidade</li>
+      <li>Craques da quebrada em destaque nacional</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>📋 Como participar</h2>
+    <ul>
+      <li>Filie sua equipe: R$100 – acesso ao selo FF7-RIDE-DF</li>
+      <li>Inscreva seu time: R$790 – até 15 jogadores + kit</li>
+      <li>Etapas: Microrregional → Regional → Nacional em SP</li>
+      <li>Jogador pode participar de até 2 equipes!</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>🎁 Bônus para os mais rápidos</h2>
+    <ul>
+      <li>Sorteio de bola/camisa oficial entre os 8 primeiros inscritos por sede</li>
+      <li>PIX em 2x (R$445) sem complicação</li>
+      <li>Grupos e suporte local via WhatsApp em cada microrregião</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>🏅 Prêmios individuais de respeito</h2>
+    <ul>
+      <li>Craque da Rodada – R$1.300</li>
+      <li>Artilheiro da competição – R$1.300</li>
+      <li>Goleiro Menos Vazado – R$1.300</li>
+      <li>Melhor Trio de Arbitragem – R$1.100</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>❓ FAQ – Perguntas Frequentes</h2>
+    <ul>
+      <li>Por que filiar? É requisito da FF7-RIDE-DF e te dá acesso total</li>
+      <li>Como pagar? PIX em até 2x</li>
+      <li>Até quando posso? Inscrição até 25/08</li>
+      <li>Jogadores extras? Permitido com taxa adicional (regulamento)</li>
+    </ul>
+  </div>
+
+  <div class="footer">
+    <h2>🔥 Não deixe pra depois: faça parte da elite do Fut7!</h2>
+    <a class="btn-final" href="#inscreva">✅ QUERO INSCREVER MEU TIME AGORA</a>
+    <p style="margin-top: 20px;">📲 Entre em contato com seu coordenador local ou acesse o grupo da sua microrregião no WhatsApp.</p>
+  </div>
 </body>
 </html>
